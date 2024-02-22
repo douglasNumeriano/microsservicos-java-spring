@@ -81,5 +81,6 @@ public class PagamentoService {
         pagamento.get().setStatus(Status.CONFIRMADO_SEM_INTEGRACAO);
         repository.save(pagamento.get());
     }
+
 }
 

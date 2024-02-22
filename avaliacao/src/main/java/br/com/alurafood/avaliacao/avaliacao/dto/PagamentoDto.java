@@ -1,10 +1,10 @@
-package br.com.alurafood.pagamentos.dto;
+package br.com.alurafood.avaliacao.avaliacao.dto;
 
-import br.com.alurafood.pagamentos.model.Status;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+
 
 public class PagamentoDto {
     private Long id;
@@ -13,7 +13,7 @@ public class PagamentoDto {
     private String numero;
     private String expiracao;
     private String codigo;
-    private Status status;
+    private StatusPagamento status;
     private Long formaDePagamentoId;
     private Long pedidoId;
 
@@ -65,11 +65,11 @@ public class PagamentoDto {
         this.codigo = codigo;
     }
 
-    public Status getStatus() {
+    public StatusPagamento getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(StatusPagamento status) {
         this.status = status;
     }
 
